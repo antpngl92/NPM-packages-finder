@@ -7,7 +7,16 @@ interface ILibrariesState {
   data: string[];
 }
 
-const reducer = (state: ILibrariesState, action: TAction): ILibrariesState => {
+const initialState = {
+  loading: false,
+  error: null,
+  data: [],
+};
+
+const reducer = (
+  state: ILibrariesState = initialState,
+  action: TAction
+): ILibrariesState => {
   switch (action.type) {
     case ActionType.SEARCH_LIBRARIES:
       return { loading: true, error: null, data: [] };
