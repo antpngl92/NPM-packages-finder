@@ -20,13 +20,13 @@ export const searchLibraries = (term: string) => {
         }
       );
 
-      const names = data.objects.map((result: any) => {
-        return result.package.name;
+      const library = data.objects.map((lib: any) => {
+        return lib;
       });
 
       dispatch({
         type: ActionType.SEARCH_LIBRARIES_SUCCESS,
-        payload: names,
+        payload: library,
       });
     } catch (err: any) {
       dispatch({

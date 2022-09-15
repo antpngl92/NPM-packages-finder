@@ -1,10 +1,11 @@
 import { TAction } from "../actions";
 import { ActionType } from "../action-types";
+import { TLibrary } from "../../pages/Library/utils";
 
 interface ILibrariesState {
   loading: boolean;
   error: string | null;
-  data: string[];
+  data: TLibrary[];
 }
 
 const initialState = {
