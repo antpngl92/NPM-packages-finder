@@ -1,6 +1,8 @@
 
 ![alt text](npm.gif "Logo Title Text 1")
 
+# [Demo](https://632337b325e2f3584944ca07--fantastic-halva-9dff28.netlify.app/) 
+
 # Dependencies:
 
 * [Redux](https://redux.js.org/)
