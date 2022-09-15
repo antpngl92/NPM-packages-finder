@@ -60,7 +60,7 @@ const LibraryList: FC = () => {
             src={"img/logo.png"}
             sx={{ heigh: "100px", width: "100px" }}
           ></Box>
-          <Typography variant="h4">Package Search</Typography>
+          <Typography variant="h4">Package Finder</Typography>
         </Stack>
 
         <form onSubmit={onSubmit}>
